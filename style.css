@@ -160,7 +160,7 @@ body{
 
 /* food section  styling ////////*/
 #food{
-    padding: 5rem 0 10rem 0;
+    padding: 5rem 0 5rem 0;
 }
 #food h2{
     text-align:center;
@@ -172,12 +172,12 @@ body{
 }
 .food-container{
     display: flex;
-    
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .image-container img{
     display: flex;
-    width: 100%;
+    max-width: 350px;
     max-height: 300px;
     border-radius: 10px;
     margin: auto;
@@ -185,7 +185,7 @@ body{
     object-position: center;
 }
 .image-container{
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     position: relative;
 }
 .image-content{
@@ -277,4 +277,57 @@ body{
 .food-detail .food-price{
     color: #117964;
     font-weight: 700;
+}
+
+/* testimonial section  styling ////////*/
+#testimonials{
+    background-color: rgba(230, 230, 230, 0.363);
+    padding: 4rem 0;
+} 
+.testimonial-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+.testimonial-title{
+    margin-top:1rem;
+    margin-bottom:3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #444;
+}
+.testimonial-box{
+    text-align: center;
+    margin: 1rem;
+    padding: auto;
+}
+.customer-image img{
+    display:block;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+}
+.customer-name{
+        margin-top:.5rem;
+        text-align: center;
+        font-size:1.2rem;
+        font-weight:500;
+        color:rgb(10, 64, 114);
+    
+    
+}
+.rating{
+    color:goldenrod;
+    margin-top:10px;
+}
+.testimonial-text{
+    font-size:1.2rem;
+    color: #555;
+    font-weight:500;
+    
 }
